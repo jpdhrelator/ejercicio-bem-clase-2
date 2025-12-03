@@ -1,0 +1,16 @@
+/* BLOQUE CON MODIFICADOR */
+.product-card--agotado {
+    background: #f0f0f0;
+    opacity: 0.7;
+}
+
+/* TAG EN ROJO */
+.product-card--agotado .product-card__tag {
+    color: #d64f4f;
+}
+
+/* BOTÓN DESACTIVADO */
+.product-card--agotado .product-card__button {
+    background: #777;
+    cursor: not-allowed;
+}
