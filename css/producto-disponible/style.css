@@ -1,0 +1,52 @@
+/* Tarjeta de producto (disponible) */
+.producto {
+	box-sizing: border-box;
+	border: 1px solid #e2e8f0; /* gris claro */
+	border-radius: 12px;
+	padding: 16px;
+	max-width: 320px;
+	display: inline-block;
+	margin: 12px;
+	background: #ffffff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.producto__imagen {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 6px;
+}
+
+.producto__titulo {
+	font-size: 1.25rem;
+	margin: 12px 0 8px;
+	color: #1f2937; /* gris oscuro */
+}
+
+.producto__precio {
+	font-size: 1.1rem;
+	margin: 0 0 12px;
+	color: #065f46; /* verde oscuro */
+	font-weight: 600;
+}
+
+.producto__boton {
+	font-size: 1rem;
+	padding: 10px 14px;
+	border: 1px solid #059669;
+	background: #10b981; /* verde minimarket */
+	color: #fff;
+	border-radius: 8px;
+}
+
+/* Interacción: hover y focus para el botón (elemento BEM) */
+.producto__boton:hover {
+	background: #059669; /* verde más oscuro al hover */
+	border-color: #047857;
+}
+
+.producto__boton:focus-visible {
+	outline: 2px solid #34d399; /* anillo accesible */
+	outline-offset: 2px;
+}

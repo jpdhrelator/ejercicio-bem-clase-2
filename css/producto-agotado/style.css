@@ -1,0 +1,16 @@
+/* Tarjeta de producto (agotado) */
+.producto.producto--agotado {
+	background: #f3f4f6; /* gris claro */
+	border-color: #e5e7eb;
+}
+
+.producto.producto--agotado .producto__imagen {
+	opacity: 0.5; /* bajar opacidad de la imagen */
+}
+
+.producto.producto--agotado .producto__boton[disabled] {
+	cursor: not-allowed;
+	background: #9ca3af; /* gris medio */
+	border-color: #9ca3af;
+	color: #ffffff;
+}

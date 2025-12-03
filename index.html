@@ -3,41 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ejercicio BEM - Índice</title>
-    <style>
-      :root { color-scheme: light dark; }
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 2rem; line-height: 1.6; }
-      header { margin-bottom: 1.5rem; }
-      h1 { font-size: 1.6rem; margin: 0 0 0.5rem; }
-      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
-      .card { border: 1px solid rgba(128,128,128,0.4); border-radius: 10px; padding: 1rem; }
-      .card h2 { font-size: 1.1rem; margin: 0 0 0.5rem; }
-      .card a { display: inline-block; margin-top: 0.5rem; }
-      footer { margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; }
-    </style>
+    <title>Productos</title>
   </head>
   <body>
-    <header>
-      <h1>Ejercicio BEM - Índice de ejemplos</h1>
-      <p>Explora los ejemplos disponibles en la carpeta <code>muestra</code>.</p>
-    </header>
+    <h1>Listado de Productos</h1>
 
-    <main class="cards">
-      <section class="card">
-        <h2>Ejemplo 1: Product Card</h2>
-        <p>Demostración de un componente de tarjeta de producto usando metodología BEM.</p>
-        <a href="muestra/ejemplo-1-product-card/index.html">Abrir ejemplo</a>
-      </section>
+    <!-- Bloque: producto (disponible) -->
+    <section class="producto">
+      <img class="producto__imagen" src="https://images.unsplash.com/photo-1543165790-779f2d69ff54?q=80&w=1200&auto=format&fit=crop" alt="Bolsa de frutas frescas - minimarket" />
+      <h2 class="producto__titulo">Producto 1</h2>
+      <p class="producto__precio">$5.990</p>
+      <button class="producto__boton">Comprar</button>
+    </section>
 
-      <section class="card">
-        <h2>Ejemplo 2: News</h2>
-        <p>Listado de noticias con componente <code>news-card</code> y variantes BEM.</p>
-        <a href="muestra/ejemplo-2-news/index.html">Abrir ejemplo</a>
-      </section>
-    </main>
+    <!-- Bloque: producto con Modificador: producto--agotado -->
+    <section class="producto producto--agotado">
+      <img class="producto__imagen" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200&auto=format&fit=crop" alt="Estantes de supermercado - minimarket" />
+      <h2 class="producto__titulo">Producto 2</h2>
+      <p class="producto__precio">$139.990</p>
+      <button class="producto__boton" disabled>Agotado</button>
+    </section>
 
-    <footer>
-      <p>Repositorio: <code>ejercicio-bem-clase-2</code> · Rama: <code>simon-palacios</code></p>
-    </footer>
+    <!-- Enlaces a CSS (creados pero vacíos por ahora) -->
+    <link rel="stylesheet" href="css/producto-disponible/style.css" />
+    <link rel="stylesheet" href="css/producto-agotado/style.css" />
+
   </body>
 </html>
