@@ -1,0 +1,13 @@
+/* MODIFICADOR: producto agotado */
+.product--agotado {
+  background: #eee;       /* fondo gris */
+}
+
+.product--agotado .product__imagen {
+  opacity: 0.4;           /* baja la opacidad de la imagen */
+}
+
+.product--agotado .product__boton {
+  background: #aaa;
+  cursor: not-allowed;
+}
