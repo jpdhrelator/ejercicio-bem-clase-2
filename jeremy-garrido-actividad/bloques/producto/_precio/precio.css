@@ -1,0 +1,6 @@
+.producto__precio {
+    font-size: 1.25rem; /* Tamaño de fuente */
+    margin-bottom: 15px; /* Margen inferior */
+    color: #007bff; /* Color para destacar el precio */
+    font-weight: bold;
+}

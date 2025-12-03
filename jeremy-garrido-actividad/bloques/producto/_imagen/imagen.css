@@ -1,0 +1,10 @@
+.producto__imagen {
+    margin-bottom: 15px;
+    /* Asegura que la imagen sea responsiva y mantenga el tamaño de su contenedor */
+    overflow: hidden; 
+}
+.producto__imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
