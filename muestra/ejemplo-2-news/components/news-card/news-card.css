@@ -1,0 +1,28 @@
+/*Bloque*/
+.news-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}
+
+/* Elementos */
+.news-card__header {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.news-card__category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: bold;
+}
+
+.news-card__title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}

@@ -1,0 +1,13 @@
+.news-card--featured {
+  background-color: #2c3e50; /* Fondo oscuro */
+  border-color: #2c3e50;
+  color: white;
+  transform: scale(1.05); /* Un poco más grande */
+}
+
+.news-card--featured .news-card__title {
+  color: #fff; /* Título blanco solo en featured */
+}
+.news-card--featured .news-card__category {
+  color: #f1c40f; /* Categoría dorada */
+}
