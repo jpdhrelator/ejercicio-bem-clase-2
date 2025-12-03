@@ -1,0 +1,15 @@
+
+.tarjeta-producto__boton {
+    padding: 10px 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ffd1e8;   
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.tarjeta-producto__boton:hover:enabled {
+    background-color: #ffb3d9;   
+}
