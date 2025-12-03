@@ -1,0 +1,75 @@
+/* Layout general */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Bloque: producto */
+.producto {
+  border: 2px solid #333;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+/* Elementos */
+.producto__imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.producto__titulo {
+  font-size: 1.25rem;
+  margin: 8px 0;
+  color: #111827;
+}
+
+.producto__precio {
+  font-size: 1.1rem;
+  margin: 6px 0 14px;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.producto__boton {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.producto__boton:hover:not(:disabled) {
+  background: #2563eb;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.4);
+}
+
+.producto__boton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Modificador: agotado */
+.producto--agotado {
+  background-color: #e5e7eb;
+}
+
+.producto--agotado .producto__imagen {
+  opacity: 0.45;
+  filter: grayscale(30%);
+}
