@@ -1,0 +1,18 @@
+body {
+    background-color: antiquewhite;
+}
+.producto {
+    
+    border: 1px solid #ddd;
+    padding: 15px;
+    
+}
+.producto--agotado {
+    background-color: #f4f4f4; 
+    border-color: #aaa;
+}
+
+.producto--agotado .producto__imagen img {
+    opacity: 0.5; /* Baja la opacidad de la imagen */
+    transition: opacity 0.3s ease;
+}
