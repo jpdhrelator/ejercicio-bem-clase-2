@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card de Producto</title>
+    <link href="css/product-card.css" rel="stylesheet">
+    <link href="css/product-agotado.css" rel="stylesheet">
+</head>
+<body>
+    <div class="product">
+        <img src="img/producto.jpg" alt="Producto" class="product__imagen">
+        <h2 class="product__titulo">Producto Normal</h2>
+
+        <p class="product__precio">$540.990</p>
+        <button class="product__boton">Comprar</button>
+    </div>
+    <!-- Producto agotado -->
+     <div class="product product--agotado">
+        <img src="img/producto.jpg" alt="Producto agotado" class="product__imagen">
+        <h2 class="product__titulo">Producto Agotado</h2>
+        <p class="product__precio">$540.990</p>
+        <button class="product__boton" disabled>No disponible</button>
+    </div>
+    
+</body>
+</html>
