@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad BEM</title>
+
+
+    <!-- bloque principal -->
+    <link rel="stylesheet" href="/actividad-evanny/tarjeta-producto/tarjeta-producto.css">
+
+    <!-- elementos -->
+    <link rel="stylesheet" href="/actividad-evanny/tarjeta-producto/__imagen/tarjeta-producto__imagen.css">
+    <link rel="stylesheet" href="/actividad-evanny/tarjeta-producto/__titulo/tarjeta-producto__titulo.css">
+    <link rel="stylesheet" href="/actividad-evanny/tarjeta-producto/__precio/tarjeta-producto__precio.css">
+    <link rel="stylesheet" href="/actividad-evanny/tarjeta-producto/__boton/tarjeta-producto__boton.css">
+
+    <!-- modificador (agotada) -->
+    <link rel="stylesheet" href="/actividad-evanny/tarjeta-producto/_agotada/tarjeta-producto--agotada.css">
+
+
+</head>
+<body>
+
+    <!-- Tarjeta del producto con BEM -->
+    <div class="tarjeta-producto">
+    <!-- Imagen del producto -->
+    <img class="tarjeta-producto__imagen" src="https://i.pinimg.com/736x/eb/c9/a0/ebc9a037a0c13d0a8ce6e1ee5c017099.jpg" alt="Gatito kawaii">
+
+    <!-- Título -->
+    <h2 class="tarjeta-producto__titulo">Gato de peluche </h2>
+
+    <!-- Descripción -->
+    <p class="tarjeta-producto__descripcion">Fabricado con felpa ultra suave, relleno de fibra hipoalergénica y costuras reforzadas. Su textura mullida y su diseño detallado lo hacen ideal para abrazar, decorar o acompañarte en el escritorio.</p>
+
+    <!-- Precio -->
+    <p class="tarjeta-producto__precio">$9.990</p>
+
+    <!-- Botón -->
+    <button class="tarjeta-producto__boton">Comprar</button>
+</div>
+
+<!-- Tarjeta del producto con modificador BEM (AGOTADA) -->
+<div class="tarjeta-producto tarjeta-producto--agotada">
+    <!-- Imagen del producto -->
+    <img class="tarjeta-producto__imagen" src="https://i.pinimg.com/736x/eb/c9/a0/ebc9a037a0c13d0a8ce6e1ee5c017099.jpg" alt="Gatito kawaii agotado">
+
+    <!-- Título -->
+    <h2 class="tarjeta-producto__titulo">Gato de peluche (Agotado)</h2>
+
+    <!-- Descripción -->
+    <p class="tarjeta-producto__descripcion">
+        Fabricado con felpa ultra suave, relleno de fibra hipoalergénica y costuras reforzadas.
+        Su textura mullida y su diseño detallado lo hacen ideal para abrazar, decorar o acompañarte en el escritorio.
+    </p>
+
+    <!-- Precio -->
+    <p class="tarjeta-producto__precio">$9.990</p>
+
+    <!-- Botón -->
+    <button class="tarjeta-producto__boton" disabled>Agotado</button>
+</div>
+
+
+    
+</body>
+</html>

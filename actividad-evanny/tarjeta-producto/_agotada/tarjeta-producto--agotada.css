@@ -1,0 +1,13 @@
+.tarjeta-producto--agotada {
+    background-color: #f0f0f0;    
+    border-color: #bbb;          
+}
+
+.tarjeta-producto--agotada .tarjeta-producto__imagen {
+    opacity: 0.5;                 
+}
+
+.tarjeta-producto--agotada .tarjeta-producto__boton {
+    background-color: #ccc;       
+    cursor: not-allowed;          
+}
