@@ -1,0 +1,50 @@
+/* Tarjeta de producto */
+.producto {
+    width: 250px;
+    border: 2px solid #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px;
+    display: inline-block;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Elementos */
+.producto__imagen {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.producto__titulo {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.producto__precio {
+    font-size: 1rem;
+    margin: 5px 0 15px;
+}
+
+.producto__boton {
+    padding: 10px 15px;
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto__boton:disabled {
+    background: #888;
+    cursor: not-allowed;
+}
+
+/* Elementos (Agotado)*/
+.producto--agotado {
+    background: #dcdcdc;
+}
+
+.producto--agotado .producto__imagen {
+    opacity: 0.4;
+}
